@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Card.module.scss";
 import image from "./../assets/download 1.svg";
 import rating from "./../assets/rating.svg";
-const Card = ({ heading }) => {
+const Card = () => {
   return (
     <div className={classes.container}>
       <div className={classes.container_badge}> 1 </div>

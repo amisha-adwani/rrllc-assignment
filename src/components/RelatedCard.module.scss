@@ -10,7 +10,10 @@
     justify-content: space-evenly;
     gap:10px;
     color: #626E79;
-
+    @include tablet{
+        font-size: 12px;
+    }
+   
     &_badge, &_prices{
          height: 28px;
         display: flex;
@@ -26,24 +29,39 @@
 
         p1{
             font-size: 20px;
+            @include tablet{
+                font-size: 14px;
+            }
         }
         p2{
             font-size: 14px;
+            @include tablet{
+                font-size: 13px;
+            }
         }
         p3{
             font-size: 13px;
-            color:red;
+            color:red; 
+            @include tablet{
+            font-size: 12px;
+        }
         }
     }
 
     button{
+        align-self: center;
         font-size: 16px;
         color:$main;
-        width:292px;
+        width:250px;
         height: 48px;
         background-color: $blue;
         border:none;
         border-radius: $borderRadius;
+        @include tablet{
+            width:200px;
+            height: 40px;
+            font-size: 14px;
+        }
     }
     img,h3{
         align-self: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Card.module.scss";
-import image from "./../assets/download 1.svg";
+import image from "./../assets/main.svg";
 import rating from "./../assets/rating.svg";
 const Card = () => {
   return (
@@ -12,12 +12,12 @@ const Card = () => {
          </div>
       <div className={classes.container_written}>
         <h3>WixPro 72-Inch Responsive Website Builder-</h3>
-        <p1>
+        <p>
           Comprehensive Digital Platform Creation Tool, Streamlined Design
           Interface for Professional Websites and Online Stores (Black/Blue)
-        </p1>
+        </p>
         <h4>Main highlights</h4>
-        <p>
+        <p className={classes.container_written_p1}>
           What You Get: Receive the WixPro website builder suite, access to
           premium design templates, an extensive library of widgets and apps,
           and detailed step-by-step guides.

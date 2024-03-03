@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import classes from './Header.module.scss'
-import image from './../assets/IMAGE.svg'
+import image from './../assets/search.svg'
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./RelatedCard.module.scss";
-import image from "./../assets/download 1.svg";
+import image from "./../assets/main.svg";
 import rating from "./../assets/rating.svg";
 const RelatedCard = () => {
   return (
@@ -18,9 +18,9 @@ const RelatedCard = () => {
           <h3> Webbuilder 1</h3>
           <p>Computer  Modern clasic with wix support</p>
          <div className={classes.container_prices}>
-          <p1>$39.95</p1>
-          <p2>$49.96</p2>
-          <p3>(20% Off)</p3>
+          <p className={classes.container_prices_p1}>$39.95</p>
+          <p className={classes.container_prices_p2}>$49.96</p>
+          <p className={classes.container_prices_p3}>(20% Off)</p>
          </div>
         <button> View Deal</button>
       </div>

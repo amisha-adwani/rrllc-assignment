@@ -27,19 +27,19 @@
             border-radius: 8px ;
         }
 
-        p1{
+        &_p1{
             font-size: 20px;
             @include tablet{
                 font-size: 14px;
             }
         }
-        p2{
+        &_p2{
             font-size: 14px;
             @include tablet{
                 font-size: 13px;
             }
         }
-        p3{
+        &_p3{
             font-size: 13px;
             color:red; 
             @include tablet{

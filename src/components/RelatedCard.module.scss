@@ -1,0 +1,51 @@
+@import './../styles/variable.scss';
+
+
+.container{
+    padding-left: 20px;
+    background: $main;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap:10px;
+    color: #626E79;
+
+    &_badge, &_prices{
+         height: 28px;
+        display: flex;
+        justify-content: flex-start;
+        font-size: $fontSize;
+        gap:10px;
+
+        &_1, &_2{
+            padding:5px;
+            background-color: #F2F4F7;
+            border-radius: 8px ;
+        }
+
+        p1{
+            font-size: 20px;
+        }
+        p2{
+            font-size: 14px;
+        }
+        p3{
+            font-size: 13px;
+            color:red;
+        }
+    }
+
+    button{
+        font-size: 16px;
+        color:$main;
+        width:292px;
+        height: 48px;
+        background-color: $blue;
+        border:none;
+        border-radius: $borderRadius;
+    }
+    img,h3{
+        align-self: center;
+    }
+}

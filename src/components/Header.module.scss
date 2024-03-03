@@ -1,0 +1,79 @@
+@import "./../styles/variable.scss";
+
+.header {
+    background-color: $dark;
+    width: 100%;
+    height: $headerHeight;
+    padding: 1rem;
+    right: 100%;
+    transition: 0.3s ease all;
+    margin: 0 auto;
+
+
+    &_content {
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 1920px;
+        color: $light;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        @include tablet() {
+            justify-content: space-between;
+        }
+
+        &_input {
+            background: #fff;
+            border-radius: 8px;
+            width: 258px;
+            height: 100%;
+            @include tablet() {
+                width: 200px;
+            }
+
+        }
+
+        &_toggle {
+            display: none;
+           
+
+            @include tablet()  {
+         cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            transition: 0.3s ease all;
+            position: relative;
+            }
+
+        }
+
+        input {
+            display: none;
+            background: $light;
+        }
+
+        ul {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            @include tablet()  {
+               display: none;
+            }
+
+            li {
+                margin-left: 40px;
+                
+               &:hover{
+                color:$blue
+               }
+            }
+        }
+
+    }
+
+    &.isMenu {
+        transform: translate(100%);
+    }
+}

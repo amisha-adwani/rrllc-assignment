@@ -1,12 +1,11 @@
 import React from 'react'
 import classes from "./RelatedCard.module.scss";
 import image from "./../assets/main.svg";
-import rating from "./../assets/rating.svg";
 const RelatedCard = () => {
   return (
     <div>
           <div className={classes.container}>
-      <img src={image} style={{paddingBottom:'20px'}}/>
+      <img src={image} alt="main"/>
          <div className={classes.container_badge}>
           <div className={classes.container_badge_1}>
             20% Off

@@ -5,25 +5,29 @@ import rating from "./../assets/rating.svg";
 const Card = () => {
   return (
     <div className={classes.container}>
-      <div className={classes.container_badge}> 1 </div>
+      <div className={classes.container_badge}> 1 
+      <div className={classes.container_badge_best}>
+        Best Choice
+      </div>
+      </div>
          <div className={classes.container_main}> 
          <div className={classes.container_main_image}>
-      <img src={image}/>
+      <img src={image} alt="main"/>
          </div>
       <div className={classes.container_written}>
-        <h3>WixPro 72-Inch Responsive Website Builder-</h3>
+        <h3>WixPro 72-Inch Responsive Website Builder</h3>
         <p>
           Comprehensive Digital Platform Creation Tool, Streamlined Design
           Interface for Professional Websites and Online Stores (Black/Blue)
         </p>
-        <h4>Main highlights</h4>
+        <h3 style={{color:'#2C384A'}}>Main highlights</h3>
         <p className={classes.container_written_p1}>
           What You Get: Receive the WixPro website builder suite, access to
           premium design templates, an extensive library of widgets and apps,
           and detailed step-by-step guides.
         </p>
         <div className={classes.container_written_show}>
-        <a href="/" style={{ textDecoration: 'none'}}>
+        <a href="/">
           Show more
         </a>
         </div>
@@ -33,7 +37,7 @@ const Card = () => {
         <h2>9.5</h2>
         <div>
           Excellent 
-          <img src={rating}/>
+          <img src={rating} alt="rating"/>
         </div>
         </div>
           <button>View</button>

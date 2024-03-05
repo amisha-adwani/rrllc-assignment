@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 import Footer from './components/Footer';
 function App() {
   return (
-    <div className="App">
+    <div className='App' style={{backgroundColor:'#FBFCFD', overflow:'hidden'}}>
     <Header/>
     <Layout/>
     <Footer/>

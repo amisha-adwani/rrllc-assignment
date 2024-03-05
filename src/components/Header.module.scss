@@ -1,19 +1,22 @@
 @import "./../styles/variable.scss";
 
 .header {
+    margin: 0;
     background-color: $dark;
-    width: 100%;
+    min-width: 100%;
     height: $headerHeight;
-    padding: 1rem;
-    right: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+     right: 100%;
     transition: 0.3s ease all;
-    margin: 0 auto;
+    // margin: 0 auto;
 
 
     &_content {
-        overflow: hidden;
+        // overflow: hidden;
         margin: 0 auto;
-        max-width: 1920px;
+        // max-width: 1920px;
         color: $light;
         display: flex;
         justify-content: center;

@@ -2,16 +2,21 @@
 
 
 .container{
-    padding-left: 20px;
+    width: 333px;
+    margin-bottom: 40px;
+    height: 425px;
+    padding: 20px;
     background: $main;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
     gap:10px;
     color: #626E79;
+    border-radius: 13px;
     @include tablet{
-        font-size: 12px;
+        width: 300px;
+        height: 350px;
+        margin-bottom: 10px;
+        gap:7px;
     }
    
     &_badge, &_prices{
@@ -20,9 +25,16 @@
         justify-content: flex-start;
         font-size: $fontSize;
         gap:10px;
-
+ &_2{
+    width: 107px;
+ }
+ &_1{
+    width: 69px;
+ }
         &_1, &_2{
-            padding:5px;
+            font-size: 13px;
+            color:#074786;
+            padding:5px 0 0 8px;
             background-color: #F2F4F7;
             border-radius: 8px ;
         }
@@ -30,18 +42,18 @@
         &_p1{
             font-size: 20px;
             @include tablet{
-                font-size: 14px;
+                font-size: 18px;
             }
         }
         &_p2{
             font-size: 14px;
-            @include tablet{
-                font-size: 13px;
-            }
+            align-self:center;
+            color: #9FA9B3;
         }
         &_p3{
             font-size: 13px;
             color:red; 
+            align-self:center;
             @include tablet{
             font-size: 12px;
         }
@@ -49,21 +61,31 @@
     }
 
     button{
+        cursor: pointer;
         align-self: center;
         font-size: 16px;
         color:$main;
-        width:250px;
+        width:292px;
         height: 48px;
         background-color: $blue;
         border:none;
         border-radius: $borderRadius;
         @include tablet{
-            width:200px;
             height: 40px;
+            width:280px;
             font-size: 14px;
         }
     }
-    img,h3{
+
+img{
+    padding:20px 0 40px 0;
+    align-self: center;
+    @include tablet{
+        padding: 0;
+    }
+}
+    h3{
         align-self: center;
+        padding-bottom:8px;
     }
 }
